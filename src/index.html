@@ -1,13 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>2048</title>
+    <link
+      rel="stylesheet"
+      href="./styles/main.scss"
+    />
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <div class="container">
+      <div class="game-header">
+        <h1>2048</h1>
+        <div class="controls">
+          <p class="info">
+            Score:
+            <span class="game-score">0</span>
+          </p>
+          <button class="button start">Start</button>
+        </div>
+      </div>
+
+      <table class="game-field">
+        <tbody>
+          <tr class="field-row">
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+          </tr>
+
+          <tr class="field-row">
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+          </tr>
+
+          <tr class="field-row">
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+          </tr>
+
+          <tr class="field-row">
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+            <td class="field-cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="message-container">
+        <p class="message message-lose hidden">You lose! Press 'Restart'</p>
+        <p class="message message-win hidden">Winner! Congrats! You did it!</p>
+        <p class="message message-start">
+          Hello! My name is Maksym and I'm web developer from Ukraine. This is my own simple implementation of popular 2048 game. In this project I used HTML, CSS, SCSS and vanilla Javascript. Press 'Start' to start the game and 'Restart' to reset. Use keyboard arrows ↑ → ↓ ← or swipes in mobile devices to move the field. Good luck!
+        </p>
+        <div class="bottom-empty-space"></div>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
