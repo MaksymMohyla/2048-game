@@ -342,6 +342,8 @@ startBtn.addEventListener("click", () => {
   game.score = 0;
   game.updateScore();
 
+  document.querySelector(".message-start").classList.add("hidden");
+
   // перезапуск гри якщо гравець програв
   if (isGameOver) {
     document.querySelector(".message-lose").classList.add("hidden");
